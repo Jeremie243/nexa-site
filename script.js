@@ -32,4 +32,7 @@ function showTrack() {
     document.getElementById('trackResult').style.display = 'block';
 }
 
-calculate();
+calculate();function toggleMenu() {
+  const menu = document.querySelector('.links');
+  menu.classList.toggle('active');
+}

@@ -469,4 +469,38 @@ footer {
   font-weight: 900;
   color: var(--nexa-gold);
   margin: 10px 0;
+}.menu-toggle {
+  display: none;
+  background: transparent;
+  color: var(--nexa-gold);
+  border: 1px solid var(--nexa-border);
+  border-radius: 14px;
+  padding: 10px 13px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 18px;
+    right: 18px;
+    background: #0C0C0D;
+    border: 1px solid var(--nexa-border);
+    border-radius: 22px;
+    padding: 18px;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 999;
+  }
+
+  .links.active {
+    display: flex;
+  }
 }
